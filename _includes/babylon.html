@@ -14,10 +14,14 @@
         var createScene = function () {
             const scene = new BABYLON.Scene(engine);  
             var panel = new BABYLON.GUI.StackPanel();
+                    
             panel.width = "220px";
             panel.fontSize = "14px";
             panel.horizontalAlignment = BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_RIGHT;
             panel.verticalAlignment = BABYLON.GUI.Control.VERTICAL_ALIGNMENT_CENTER;
+            // GUI - simply set advancedTexture layerMask to 2
+            var advancedTexture = BABYLON.GUI.AdvancedDynamicTexture.CreateFullscreenUI("UI");
+            advancedTexture.layer.layerMask = 2;
             advancedTexture.addControl(panel);  
             var slider = new BABYLON.GUI.Slider();
             slider.horizontalAlignment = BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_LEFT;
