@@ -13,12 +13,37 @@
         // Add your code here matching the playground format
         var createScene = function () {
             const scene = new BABYLON.Scene(engine);  
+            var panel = new BABYLON.GUI.StackPanel();
+            panel.width = "220px";
+            panel.fontSize = "14px";
+            panel.horizontalAlignment = BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_RIGHT;
+            panel.verticalAlignment = BABYLON.GUI.Control.VERTICAL_ALIGNMENT_CENTER;
+            advancedTexture.addControl(panel);  
+            var slider = new BABYLON.GUI.Slider();
+            slider.horizontalAlignment = BABYLON.GUI.Control.HORIZONTAL_ALIGNMENT_LEFT;
+            slider.minimum = 0;
+            slider.maximum = 2 * Math.PI;
+            slider.color = "green";
+            slider.value = 0;
+            slider.height = "20px";
+            slider.width = "200px";
+            slider.onValueChangedObservable.add(function(value) {
+                        header.text = "Y-rotation: " + (BABYLON.Tools.ToDegrees(value) | 0) + " deg";
+                        if (skull) {
+                                    skull.rotation.y = value;
+                        }
+            });
+            panel.addControl(slider);            
+                    
+                    
             BABYLON.MeshBuilder.CreateBox("box", {})
             const camera = new BABYLON.ArcRotateCamera("camera", -Math.PI / 2, Math.PI / 2.5, 15, new BABYLON.Vector3(0, 0, 0));
             camera.attachControl(cv, true);
             const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(1, 1, 0));
             return scene;
         };
+          
+            
         var scene = createScene(); //Call the createScene function
         // Register a render loop to repeatedly render the scene
         engine.runRenderLoop(function () {
