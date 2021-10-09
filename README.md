@@ -1,4 +1,4 @@
-# Jekyll GitBook
+# Computational Design
 
 Make Jelly site have a GitBook look!
 
