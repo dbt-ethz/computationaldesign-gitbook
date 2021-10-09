@@ -1,5 +1,5 @@
 ---
-title: How to Generate TOC
+title: The Digital Image
 author: Tao He
 date: 2019-04-28
 category: Jekyll
