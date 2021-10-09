@@ -1,7 +1,7 @@
 # Configurations
-title:            Jekyll Gitbook
-longtitle:        Jekyll Gitbook
-author:           HE Tao
+title:            Computational Design Gitbook
+longtitle:        Computational Design Gitbook
+author:           Benjamin Dillenburger
 email:            sighingnow@gmail.com
 description: >
   Build Jekyll site with the GitBook style.
