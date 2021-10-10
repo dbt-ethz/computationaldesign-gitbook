@@ -12,7 +12,7 @@ is building HTML files locally and then push to Github repository, usually to th
 branch. However, it's quite annoying to repeat such workload and make it hard for people do
 version control via git for when there are generated HTML files to be staged in and out.
 
-<p class="codepen" data-height="300" data-default-tab="result" data-slug-hash="XWaWZja" data-user="modellstadt" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+<p class="codepen" data-height="300" data-show-tab-bar="no" data-default-tab="result" data-slug-hash="XWaWZja" data-user="modellstadt" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/modellstadt/pen/XWaWZja">
   Untitled</a> by modellstadt (<a href="https://codepen.io/modellstadt">@modellstadt</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
