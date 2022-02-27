@@ -1,5 +1,5 @@
-##API
+# API
 this is an glossary entry
 
-#BPI
+# BPI
 this is another glossary entry
